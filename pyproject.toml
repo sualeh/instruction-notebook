@@ -1,0 +1,29 @@
+[tool.poetry]
+requires-poetry = ">=2.0,<3.0"
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[project]
+name = "instruction-notebook"
+description = "Python Instruction Notebook"
+version = "0.0.1"
+authors = [
+    {name = "Sualeh Fatehi",email = "sualeh@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter (>=1.1.1)",
+    "ipykernel (>=6.29.5)",
+    "nbstripout (>=0.8.1,<0.9.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
